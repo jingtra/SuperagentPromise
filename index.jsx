@@ -100,5 +100,5 @@ function wrap(){
     return request;
 }
 
-module.exports = wrap();
+export default wrap();
 
