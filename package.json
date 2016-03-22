@@ -1,8 +1,8 @@
 {
   "name": "superagent-promise-no-cache",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Superagent as a promise with noCache fix for ie",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/jingtra/SuperagentPromise/issues"
   },
-  "homepage": "https://github.com/jingtra/SuperagentPromise"
+  "homepage": "https://github.com/jingtra/SuperagentPromise",
+  "dependencies": {
+    "superagent": "^1.8.0",
+    "superagent-promise": "^1.1.0"
+  }
 }

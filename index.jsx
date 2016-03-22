@@ -1,3 +1,4 @@
+if(typeof Promise == 'undefined') Promise = require('bluebird');
 var agentPromise = require('superagent-promise')(require('superagent'), Promise);
 var noCache = require('./SuperagentNoCache.jsx');
 var check = require('./SuperagentToJSON.jsx');
