@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.8.2
+3 info using node@v5.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jobswipe/superagentPromise',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jobswipe/.npm/superagent-promise-no-cache/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/jobswipe/.npm correctMkdir not in flight; initializing
+10 info lifecycle superagent-promise-no-cache@1.0.2~prepublish: superagent-promise-no-cache@1.0.2
+11 silly lifecycle superagent-promise-no-cache@1.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/jobswipe/.npm/superagent-promise-no-cache/1.0.2/package.tgz',
+12 verbose tar pack   '/Users/jobswipe/superagentPromise' ]
+13 verbose tarball /Users/jobswipe/.npm/superagent-promise-no-cache/1.0.2/package.tgz
+14 verbose folder /Users/jobswipe/superagentPromise
+15 verbose addLocalTarball adding from inside cache /Users/jobswipe/.npm/superagent-promise-no-cache/1.0.2/package.tgz
+16 verbose correctMkdir /Users/jobswipe/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd superagent-promise-no-cache@1.0.2
+18 verbose afterAdd /Users/jobswipe/.npm/superagent-promise-no-cache/1.0.2/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/jobswipe/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/jobswipe/.npm/superagent-promise-no-cache/1.0.2/package/package.json written
+21 silly publish { name: 'superagent-promise-no-cache',
+21 silly publish   version: '1.0.2',
+21 silly publish   description: 'Superagent as a promise with noCache fix for ie',
+21 silly publish   main: 'index.jsx',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/jingtra/SuperagentPromise.git' },
+21 silly publish   keywords: [ 'superagent', 'promise', 'nocache' ],
+21 silly publish   author: { name: 'Jing Kjeldsen', email: 'jingtra@gmail.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/jingtra/SuperagentPromise/issues' },
+21 silly publish   homepage: 'https://github.com/jingtra/SuperagentPromise',
+21 silly publish   dependencies: { superagent: '^1.8.0', 'superagent-promise': '^1.1.0' },
+21 silly publish   gitHead: 'ed2c08924d905c16e8169ae7bc987291df2cbb15',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'superagent-promise-no-cache@1.0.2',
+21 silly publish   _shasum: '3d8c6923ddccbb436f3d4d788b084f4528f81a88',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name superagent-promise-no-cache
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/superagent-promise-no-cache
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/jobswipe/.npm/superagent-promise-no-cache/1.0.2/package.tgz
+29 verbose request uri https://registry.npmjs.org/superagent-promise-no-cache
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 1:19:06 AM
+32 verbose request using bearer token for auth
+33 verbose request id b6bcce5e7964ac4b
+34 http request PUT https://registry.npmjs.org/superagent-promise-no-cache
+35 http 403 https://registry.npmjs.org/superagent-promise-no-cache
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Tue, 22 Mar 2016 00:19:07 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-ams4127-AMS',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1458605946.637987,VS0,VE1329' }
+37 verbose request invalidating /Users/jobswipe/.npm/registry.npmjs.org/superagent-promise-no-cache on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.2." : superagent-promise-no-cache
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid superagent-promise-no-cache
+42 verbose cwd /Users/jobswipe/superagentPromise
+43 error Darwin 15.2.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v5.0.0
+46 error npm  v3.8.2
+47 error code E403
+48 error "You cannot publish over the previously published version 1.0.2." : superagent-promise-no-cache
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

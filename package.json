@@ -1,6 +1,6 @@
 {
   "name": "superagent-promise-no-cache",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Superagent as a promise with noCache fix for ie",
   "main": "index.jsx",
   "scripts": {
